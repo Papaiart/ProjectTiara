@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260" role="img" aria-label="Teli olvasomaraton">
+  <rect width="400" height="260" fill="#E9F0F1"/>
+  <rect x="8" y="8" width="384" height="244" fill="none" stroke="#5E8590" stroke-width="1.5" rx="6"/>
+  <!-- hopelyhek -->
+  <g stroke="#5E8590" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
+    <g transform="translate(60,50)"><line x1="-8" y1="0" x2="8" y2="0"/><line x1="0" y1="-8" x2="0" y2="8"/><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+    <g transform="translate(330,70)"><line x1="-8" y1="0" x2="8" y2="0"/><line x1="0" y1="-8" x2="0" y2="8"/><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+    <g transform="translate(300,200)"><line x1="-6" y1="0" x2="6" y2="0"/><line x1="0" y1="-6" x2="0" y2="6"/><line x1="-4" y1="-4" x2="4" y2="4"/><line x1="-4" y1="4" x2="4" y2="-4"/></g>
+  </g>
+  <!-- bogre forro itallal -->
+  <g transform="translate(250,90)">
+    <path d="M0 10 h70 v44 a18 18 0 0 1 -18 18 h-34 a18 18 0 0 1 -18 -18 Z" fill="#FBF7F0" stroke="#3A3632" stroke-width="2.5"/>
+    <path d="M70 22 a16 16 0 0 1 0 30" fill="none" stroke="#3A3632" stroke-width="2.5"/>
+    <path d="M18 2 q4 -8 0 -14 M36 2 q4 -8 0 -14 M54 2 q4 -8 0 -14" fill="none" stroke="#8AB0BA" stroke-width="2"/>
+  </g>
+  <!-- konyvkupac -->
+  <g transform="translate(40,150)" stroke="#3A3632" stroke-width="2.5">
+    <rect x="0" y="40" width="120" height="20" rx="3" fill="#B98A8A"/>
+    <rect x="10" y="22" width="100" height="20" rx="3" fill="#8AA68F"/>
+    <rect x="22" y="4" width="80" height="20" rx="3" fill="#E6C878"/>
+  </g>
+  <text x="32" y="118" font-family="Georgia, serif" font-size="25" fill="#3A3632">Téli</text>
+  <text x="32" y="146" font-family="Georgia, serif" font-size="21" fill="#5E8590">maraton</text>
+</svg>

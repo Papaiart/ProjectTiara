@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 24" width="300" height="24" role="img" aria-label="diszito elvalaszto">
+  <g stroke="#C9A24B" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <line x1="10" y1="12" x2="120" y2="12"/>
+    <line x1="180" y1="12" x2="290" y2="12"/>
+  </g>
+  <g transform="translate(150,12)" fill="none" stroke="#C9A24B" stroke-width="1.6">
+    <path d="M-18 0 C-9 -9 9 -9 18 0 C9 9 -9 9 -18 0 Z"/>
+    <circle cx="0" cy="0" r="3.4" fill="#C9A24B"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Borito Bingo plecsni">
+  <defs>
+    <linearGradient id="bb-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9CE84"/><stop offset="1" stop-color="#B68A33"/>
+    </linearGradient>
+  </defs>
+  <!-- szalag -->
+  <path d="M70 150 L60 192 L82 178 L100 196 L118 178 L140 192 L130 150 Z" fill="#B98A8A"/>
+  <!-- erem -->
+  <circle cx="100" cy="92" r="78" fill="#FBF7F0" stroke="url(#bb-gold)" stroke-width="7"/>
+  <circle cx="100" cy="92" r="66" fill="none" stroke="#D9C49A" stroke-width="2" stroke-dasharray="2 5"/>
+  <!-- bingo racs -->
+  <g transform="translate(64,56)" stroke="#3A3632" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="72" height="72" rx="4"/>
+    <line x1="24" y1="0" x2="24" y2="72"/><line x1="48" y1="0" x2="48" y2="72"/>
+    <line x1="0" y1="24" x2="72" y2="24"/><line x1="0" y1="48" x2="72" y2="48"/>
+  </g>
+  <g transform="translate(64,56)" fill="#C9A24B">
+    <rect x="2" y="2" width="20" height="20" rx="2"/>
+    <rect x="26" y="26" width="20" height="20" rx="2"/>
+    <rect x="50" y="50" width="20" height="20" rx="2"/>
+  </g>
+  <g transform="translate(64,56)" fill="#B98A8A">
+    <circle cx="60" cy="12" r="6"/><circle cx="12" cy="60" r="6"/>
+  </g>
+  <text x="100" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="13" letter-spacing="1" fill="#7A6A52">BORÍTÓ BINGÓ</text>
+</svg>

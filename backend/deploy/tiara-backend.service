@@ -1,0 +1,22 @@
+# systemd service a Tiara backendhez.
+# Masold ide:  /etc/systemd/system/tiara-backend.service
+# Majd:        sudo systemctl daemon-reload && sudo systemctl enable --now tiara-backend
+#
+# Igazitsd a User es a WorkingDirectory ertekeket a sajat szerveredhez!
+
+[Unit]
+Description=Tiara konyves oldal - backend API
+After=network.target
+
+[Service]
+Type=simple
+User=tiara
+WorkingDirectory=/home/tiara/book-badges/backend
+ExecStart=/usr/bin/node src/server.js
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+# A .env fajlt a WorkingDirectory-ban olvassa be a program.
+
+[Install]
+WantedBy=multi-user.target

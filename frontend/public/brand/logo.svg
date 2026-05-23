@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" width="240" height="72" role="img" aria-label="Tiara - konyves kihivasok">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E6C878"/>
+      <stop offset="0.5" stop-color="#C9A24B"/>
+      <stop offset="1" stop-color="#A9842F"/>
+    </linearGradient>
+  </defs>
+  <!-- tiara / korona -->
+  <g transform="translate(14,8)" fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M2 22 L7 6 L16 16 L24 3 L32 16 L41 6 L46 22 Z"/>
+    <line x1="2" y1="27" x2="46" y2="27"/>
+    <circle cx="24" cy="3" r="2.6" fill="url(#gold)" stroke="none"/>
+    <circle cx="7" cy="6" r="2" fill="url(#gold)" stroke="none"/>
+    <circle cx="41" cy="6" r="2" fill="url(#gold)" stroke="none"/>
+  </g>
+  <!-- nyitott konyv -->
+  <g transform="translate(10,40)" fill="none" stroke="#3A3632" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M2 4 C12 0 22 0 27 4 C32 0 42 0 52 4 L52 22 C42 18 32 18 27 22 C22 18 12 18 2 22 Z"/>
+    <line x1="27" y1="4" x2="27" y2="22"/>
+  </g>
+  <!-- szoveg -->
+  <text x="80" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="3" fill="#3A3632">Tiara</text>
+  <text x="82" y="58" font-family="Georgia, serif" font-size="10.5" letter-spacing="3" fill="#9A8E7E">KÖNYVES KIHÍVÁSOK</text>
+</svg>

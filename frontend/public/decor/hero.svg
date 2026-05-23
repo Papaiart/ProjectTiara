@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 360" width="440" height="360" role="img" aria-label="Olvaso illusztracio">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#FBF3DF"/><stop offset="1" stop-color="#F4ECDD"/>
+    </radialGradient>
+  </defs>
+  <circle cx="220" cy="160" r="150" fill="url(#halo)"/>
+  <!-- csillagok -->
+  <g fill="#C9A24B">
+    <path d="M90 60 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 Z"/>
+    <path d="M360 80 l2.5 6 l6 2.5 l-6 2.5 l-2.5 6 l-2.5 -6 l-6 -2.5 l6 -2.5 Z"/>
+    <circle cx="120" cy="120" r="2.5"/><circle cx="340" cy="150" r="2.5"/><circle cx="80" cy="200" r="2"/>
+  </g>
+  <!-- nyitott konyv kozepen -->
+  <g transform="translate(110,150)">
+    <path d="M0 30 C40 6 90 6 110 26 C130 6 180 6 220 30 L220 150 C180 124 130 124 110 144 C90 124 40 124 0 150 Z"
+          fill="#FBF7F0" stroke="#3A3632" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="110" y1="26" x2="110" y2="144" stroke="#3A3632" stroke-width="3"/>
+    <g stroke="#C9A24B" stroke-width="2" opacity="0.7">
+      <path d="M18 50 q34 -12 78 -6 M18 70 q34 -10 78 -4 M18 90 q34 -10 78 -4"/>
+      <path d="M124 44 q40 -6 78 6 M124 64 q40 -6 78 4 M124 84 q40 -6 78 4"/>
+    </g>
+    <!-- felszallo szivecskek/lapok -->
+    <g fill="#B98A8A">
+      <path d="M104 -2 c-6 -10 -20 -4 -14 6 c2 6 14 12 14 12 c0 0 12 -6 14 -12 c6 -10 -8 -16 -14 -6 Z" transform="translate(0,-30) scale(0.8)"/>
+    </g>
+  </g>
+  <!-- viragos ag -->
+  <g transform="translate(330,200)" stroke="#8AA68F" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M0 90 C10 50 30 30 50 10"/>
+    <path d="M20 56 q-14 -4 -20 -16 M20 56 q4 -14 18 -18"/>
+    <path d="M36 34 q-14 -2 -20 -14 M36 34 q6 -12 20 -14"/>
+  </g>
+  <g transform="translate(330,200)" fill="#B98A8A">
+    <circle cx="50" cy="10" r="5"/><circle cx="0" cy="40" r="4"/><circle cx="56" cy="20" r="4"/>
+  </g>
+  <!-- pillango -->
+  <g transform="translate(96,250)" fill="none" stroke="#3A3632" stroke-width="2">
+    <path d="M0 0 c-16 -16 -28 -8 -22 6 c4 10 22 8 22 -2 c0 10 18 12 22 2 c6 -14 -6 -22 -22 -6 Z"/>
+    <line x1="0" y1="-4" x2="0" y2="10"/>
+  </g>
+</svg>

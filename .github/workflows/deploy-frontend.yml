@@ -1,0 +1,61 @@
+name: Frontend telepitese GitHub Pages-re
+
+# Akkor fut le, amikor a main agra pusholsz, es a frontend valtozott.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/deploy-frontend.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Fuggosegek telepitese
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build
+        working-directory: frontend
+        env:
+          # A "base" a repo neve lesz, pl. /book-badges/
+          VITE_BASE: /${{ github.event.repository.name }}/
+          # A backend (API) cime. Allitsd be a repo Settings > Secrets and variables > Actions > Variables
+          # alatt egy "VITE_API_URL" nevu valtozoban, pl: https://api.tiara-oldalad.hu
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

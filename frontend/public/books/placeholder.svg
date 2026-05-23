@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 210" width="150" height="210" role="img" aria-label="Konyv borito helye">
+  <rect x="10" y="6" width="130" height="198" rx="6" fill="#EFE7D8" stroke="#D9C49A" stroke-width="2" stroke-dasharray="5 5"/>
+  <g transform="translate(75,92)" fill="none" stroke="#C9A24B" stroke-width="2.5" stroke-linejoin="round" opacity="0.8">
+    <path d="M-30 -16 C-12 -24 6 -24 12 -16 C18 -24 36 -24 30 -16 L30 18 C24 12 6 12 0 18 C-6 12 -24 12 -30 18 Z" transform="translate(-1,0)"/>
+  </g>
+  <text x="75" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#A99775">+ Borító kép</text>
+</svg>

@@ -1,0 +1,16 @@
+# Fuggosegek
+node_modules/
+
+# Build kimenet
+frontend/dist/
+
+# Kornyezeti valtozok (titkok!)
+.env
+
+# Backend adatbazis es feltoltott kepek
+backend/data/
+backend/uploads/
+
+# Naplok es ideiglenes fajlok
+*.log
+.DS_Store

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Matrix plecsni">
+  <defs>
+    <linearGradient id="mx-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9A9A9"/><stop offset="1" stop-color="#9C6A6A"/>
+    </linearGradient>
+  </defs>
+  <path d="M70 150 L60 192 L82 178 L100 196 L118 178 L140 192 L130 150 Z" fill="#C9A24B"/>
+  <circle cx="100" cy="92" r="78" fill="#FBF7F0" stroke="url(#mx-rose)" stroke-width="7"/>
+  <circle cx="100" cy="92" r="66" fill="none" stroke="#E0C4C4" stroke-width="2" stroke-dasharray="2 5"/>
+  <!-- matrix pontok es vonalak -->
+  <g transform="translate(64,56)">
+    <g stroke="#B98A8A" stroke-width="2.5">
+      <line x1="12" y1="12" x2="36" y2="36"/><line x1="60" y1="12" x2="36" y2="36"/>
+      <line x1="12" y1="60" x2="36" y2="36"/><line x1="60" y1="60" x2="36" y2="36"/>
+    </g>
+    <g fill="#3A3632">
+      <circle cx="12" cy="12" r="7"/><circle cx="36" cy="12" r="5"/><circle cx="60" cy="12" r="7"/>
+      <circle cx="12" cy="36" r="5"/><circle cx="60" cy="36" r="5"/>
+      <circle cx="12" cy="60" r="7"/><circle cx="36" cy="60" r="5"/><circle cx="60" cy="60" r="7"/>
+    </g>
+    <circle cx="36" cy="36" r="9" fill="#C9A24B"/>
+  </g>
+  <text x="100" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="2" fill="#7A6A52">MÁTRIX</text>
+</svg>
