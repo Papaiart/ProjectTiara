@@ -1,0 +1,33 @@
+name: Backend frissitese szerveren
+
+# Csak manualisan indithato
+on:
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Parancsok futtatasa a szerveren
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT || '22' }}
+          # Ezek a parancsok futnak le a szervereden:
+          script: |
+            # 1. Belepes a backend mappaba
+            cd /var/www/tiara-backend
+
+            # 2. Legujabb kod lehuzasa a GitHubrol
+            git pull origin main
+
+            # 3. Backend mappaba lepes (ha a repo gyokerebe klonoztad)
+            cd backend
+
+            # 4. Uj fuggosegek telepitese
+            npm install --omit=dev
+
+            # 5. Szolgaltatas ujrainditasa (systemd)
+            sudo systemctl restart tiara-backend
