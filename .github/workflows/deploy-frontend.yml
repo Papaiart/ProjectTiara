@@ -1,12 +1,7 @@
 name: Frontend telepitese GitHub Pages-re
 
-# Akkor fut le, amikor a main agra pusholsz, es a frontend valtozott.
+# Csak manualisan indithato a GitHub feluleten.
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'frontend/**'
-      - '.github/workflows/deploy-frontend.yml'
   workflow_dispatch: {}
 
 permissions:
